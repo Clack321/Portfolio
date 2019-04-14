@@ -1,13 +1,17 @@
 .header-bar-box {
     background-color: gold;
     margin: auto;
-    width: 300px;
-    border: 4px goldenrod double;
+    width: 250px;
+    border-radius: 5%;
+    border: 4px goldenrod double; 
     box-shadow: -7px 7px 7px rgba(71, 71, 71, 0.555), 7px -7px 7px rgba(71, 71, 71, 0.555), inset 0px -4px 5px 3px rgba(109, 78, 0, 0.377);
+    margin-bottom: 25px;
+    margin-top: 10px;
 }
 
 .picture-of-me {
-    width: 300px;
+    width: 250px;
+    border-radius: 5% 5% 0% 0%;
 }
 
 .header-bar-box > h1 {

@@ -1,0 +1,54 @@
+.about-me {
+background-color: rgba(255, 255, 255, 0.568);
+border: 4px goldenrod double;
+border-radius: 12%;
+margin: auto;
+width: 850px;
+box-shadow: -7px 0px 7px rgba(71, 71, 71, 0.555), 7px -7px 7px rgba(71, 71, 71, 0.555), inset 8px -8px 10px 3px rgba(109, 78, 0, 0.377),inset -8px 8px 10px 3px rgba(109, 78, 0, 0.377);
+margin-bottom: 10px;
+}
+
+
+.about-me-text-box  {
+    border-radius: 8%;
+    width: 800px;
+    margin: auto;
+}
+.about-me-text-box > p {
+    font-size: 24px;
+    text-shadow: .55px .55px goldenrod;
+}
+
+@media only screen and (max-width: 1200px) {
+    .about-me {
+        border-radius: 10%;
+        width: 650px;
+    }
+
+    .about-me-text-box  {
+        width: 600px;
+    }
+  }
+@media only screen and (max-width: 900px) {
+    .about-me {
+        border-radius: 6%;
+        width: 550px;
+    }
+
+    .about-me-text-box  {
+        width: 500px;
+    }
+  
+  }
+
+  @media only screen and (max-width: 600px) {
+    .about-me {
+        border-radius: 5%;
+        width: 300px;
+    }
+
+    .about-me-text-box  {
+        width: 280px;
+    }
+  
+  }

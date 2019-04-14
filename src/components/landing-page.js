@@ -1,9 +1,9 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
-import HeaderBar from './header'
+import Header from './header'
 import SideBar from './sidebar'
-
+import AboutMe from './about-me'
 
 export function LandingPage(props) {
 
@@ -12,7 +12,8 @@ export function LandingPage(props) {
       <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"} />
 
       <div id="page-wrap">
-        <HeaderBar />
+        <Header />
+        <AboutMe />
       </div>
     </div>
   );

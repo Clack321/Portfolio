@@ -6,7 +6,7 @@ import me from './me.jpg'
 import '../styles/header.css'
 
 
-class HeaderBar extends Component {
+class Header extends Component {
   render() {
     return (
       <header className="header-bar-box">
@@ -21,5 +21,5 @@ class HeaderBar extends Component {
 const mapStateToProps = state => ({
 });
 
-export default withRouter(connect(mapStateToProps)(HeaderBar));
+export default withRouter(connect(mapStateToProps)(Header));
 
