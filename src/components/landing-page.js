@@ -1,17 +1,20 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
-import BurgerMenu from './burger-menu'
+import HeaderBar from './header'
+import SideBar from './sidebar'
 
 
 export function LandingPage(props) {
 
   return (
-  <div>
-    <Link to="/about-me" className="register-link">Lets go</Link>
-    <BurgerMenu />
-  </div>
-    
+    <div id="App">
+      <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"} />
+
+      <div id="page-wrap">
+        <HeaderBar />
+      </div>
+    </div>
   );
 }
 
