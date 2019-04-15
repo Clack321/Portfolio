@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import SideBar from './sidebar'
 import Footer from './footer'
-import {moveMenuLeft, moveMenuRight} from '../actions/actions'
+import {moveMenuLeft, moveMenuRight, updateDisplay} from '../actions/actions'
 import '../styles/past-works.css'
 
 
@@ -18,6 +18,10 @@ class PastWorks extends Component {
     }
   }
 
+  updateDisplay(display) {
+    this.props.dispatch(updateDisplay(display));
+  }
+
   moveMenuLeft() {
     this.props.dispatch(moveMenuLeft())
   }
@@ -31,18 +35,20 @@ class PastWorks extends Component {
       <div id="App">
         <SideBar pageWrapId={"inner-box"} outerContainerId={"App"} />
         <main className="outer-box">
-        <button className="move-projects-left-button" onClick={() => this.moveMenuLeft()}></button>
           <div id="inner-box">
             <h1 className="past-works-title">{this.props.pastWorks[this.props.projectIndex].title}</h1>
             <p className="past-works-description">{this.props.pastWorks[this.props.projectIndex].description}</p>
             <div className="button-container">
-              <button className="past-works-button" onClick={e => console.log("Cool Features Clicked!")}>Cool Features</button>
-              <button className="past-works-button" onClick={e => console.log("Tech Stack Clicked!")}>Tech Stack</button>
-              <button className="past-works-button" onClick={e => console.log("Extra Info Clicked!")}>Extra Info</button>
+              <button className="past-works-button" onClick={() => this.updateDisplay("coolFeatures")}>Cool Features</button>
+              <button className="past-works-button" onClick={() => this.updateDisplay("techStack")}>Tech Stack</button>
+              <button className="past-works-button" onClick={() => this.updateDisplay("extraInfo")}>Extra Info</button>
             </div>
-            <article className="past-works-output-box">{this.returnCorrectDisplay(this.props.pastWorks[this.props.projectIndex].display)}</article>
+            <div className="output-box-container">
+              <button className="move-projects-left-button" onClick={() => this.moveMenuLeft()}>Prev</button>
+              <article className="past-works-output-box">{this.returnCorrectDisplay(this.props.display)}</article>
+              <button className="move-projects-right-button" onClick={() => this.moveMenuRight()}>Next</button>
+            </div>
           </div>
-          <button className="move-projects-right-button" onClick={() => this.moveMenuRight()}></button>
         </main>
         <Footer />
       </div>
@@ -52,7 +58,8 @@ class PastWorks extends Component {
 
 const mapStateToProps = state => ({
   pastWorks : state.reducer.projects,
-  projectIndex : state.reducer.projectIndex
+  projectIndex : state.reducer.projectIndex,
+  display : state.reducer.display
 });
 
 export default connect(mapStateToProps)(PastWorks);

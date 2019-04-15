@@ -22,12 +22,14 @@
 #inner-box > h1 {
   font-size: 64px;
   text-align: center;
+  display: inline;
   text-shadow: .45px .45px gold;
 }
 
 #inner-box > p {
   text-align: center;
   font-size: 24px;
+  display: inline;
   text-shadow: .45px .45px gold;
 }
 
@@ -74,20 +76,42 @@
 
 .move-projects-left-button {
   height: 304px;
-  top: 425px;
-  left: 23px;
   width: 50px;
+  color: #00fff2;
   border-radius: 100% 0px 0px 100%;
+  border: 1px double goldenrod;
   background-color: #008085;
-  position: absolute;
+  transition: color .5s;
 }
 
 .move-projects-right-button {
+  color: #00fff2;
   height: 304px;
-  top: 425px;
-  right: 23px;
   width: 50px;
   border-radius: 0 100% 100% 0;
+  border: 2px double goldenrod;
   background-color: #008085;
-  position: absolute;
+  transition: color .5s;
+}
+
+.move-projects-right-button:hover {
+  background-color: red;
+  color: rgb(255, 225, 58);
+}
+
+.move-projects-left-button:hover {
+  background-color: red;
+  color: rgb(255, 225, 58);
+}
+.move-projects-right-button:active {
+  background-color: goldenrod;
+}
+
+.move-projects-left-button:active {
+  background-color: goldenrod;
+}
+.output-box-container {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
 }
