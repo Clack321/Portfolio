@@ -13,6 +13,7 @@
 
   /* Our sidebar item styling */
   text-decoration: none;
+  text-decoration: bold;
   text-align: center;
   font-size: 44px;
   margin-bottom: 10px;
@@ -21,7 +22,7 @@
   border-radius: 30%;
   color: #00fff2;
   width: 150px;
-  transition: color .4s;
+  transition: color 1.3s;
 }
 
 /* Change color on hover */
