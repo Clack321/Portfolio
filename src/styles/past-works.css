@@ -12,8 +12,60 @@
     width: 800px;
     height: 800px;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+#inner-box > h1 {
+    font-size: 64px;
+    text-align: center;
+    text-shadow: .45px .45px gold;
+}
+
 #inner-box > p {
     font-size: 24px;
     text-shadow: .45px .45px gold;
 }
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.past-works-button {
+    /* Our sidebar item styling */
+    background-color: #008085;
+    text-decoration: none;
+    text-decoration: bold;
+    text-align: center;
+    font-size: 24px;
+    margin-left: 5px;
+    border: 3px solid goldenrod;
+    box-shadow: -2px 2px 3px 3px rgba(0, 0, 0, 0.459);
+    border-radius: 30%;
+    color: #00fff2;
+    height: 120px;
+    width: 150px;
+    transition: color 1.3s;
+  }
+
+  .past-works-button:hover {
+    color: gold;
+    background-color: red;
+  }
+
+  .past-works-button:active {
+    box-shadow: 0px 0px white;
+    color: gold;
+    background-color: red;
+  }
+
+  .past-works-output-box {
+      border-radius: 3%;
+      border: 2px goldenrod double;
+      width: 700px;
+      margin: auto;
+      height: 300px;
+      background-color: white;
+  }
