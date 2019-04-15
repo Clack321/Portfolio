@@ -3,7 +3,8 @@ background-color: rgba(255, 255, 255, 0.568);
 border: 4px gold double;
 border-radius: 12%;
 margin: auto;
-width: 850px;
+width: 800px;
+height: 350px;
 box-shadow: -7px 0px 7px rgba(71, 71, 71, 0.555), 7px -7px 7px rgba(71, 71, 71, 0.555), inset 8px -8px 10px 3px rgba(109, 78, 0, 0.377),inset -8px 8px 10px 3px rgba(109, 78, 0, 0.377);
 margin-bottom: 10px;
 }
@@ -11,22 +12,22 @@ margin-bottom: 10px;
 
 .about-me-text-box  {
     border-radius: 8%;
-    width: 800px;
+    height: 300px;
     margin: auto;
 }
 .about-me-text-box > p {
-    font-size: 24px;
+    font-size: 21.5px;
     text-shadow: .45px .45px gold;
 }
 
 @media only screen and (max-width: 1200px) {
     .about-me {
         border-radius: 10%;
-        width: 650px;
+        width: 800px;
     }
 
     .about-me-text-box  {
-        width: 600px;
+        width: 750px;
     }
   }
 @media only screen and (max-width: 900px) {

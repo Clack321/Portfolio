@@ -12,7 +12,9 @@ class PastWorks extends Component {
     if (display === "coolFeatures") {
       return this.props.pastWorks[this.props.projectIndex].coolFeatures
     } else if (display === "techStack") {
-      return this.props.pastWorks[this.props.projectIndex].techStack
+      return this.props.pastWorks[this.props.projectIndex].techStack.map( (tech) => {
+        return (`${tech} `)
+      })
     } else if (display === "extraInfo") {
       return this.props.pastWorks[this.props.projectIndex].extraInfo
     }

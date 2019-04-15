@@ -2,7 +2,7 @@
     height: 100px;
     border: .1px gold solid;
     background-color: #005e61;
-    position: relative;
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
