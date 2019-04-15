@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 import Header from './header'
 import SideBar from './sidebar'
 import AboutMe from './about-me'
+import Footer from './footer'
 
 export function LandingPage(props) {
 
@@ -14,6 +15,7 @@ export function LandingPage(props) {
       <div id="page-wrap">
         <Header />
         <AboutMe />
+        <Footer />
       </div>
     </div>
   );

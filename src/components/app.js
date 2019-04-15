@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import {Route, withRouter} from 'react-router-dom';
 import { LandingPage } from './landing-page';
+import  PastWorks  from './past-works'
 import '../styles/app.css'
 
 class app extends Component {
@@ -9,7 +10,7 @@ class app extends Component {
     return (
       <div>
         <Route exact path="/" component={LandingPage} />
-        {/* <Route exact path="/about-me" component={AboutMe} /> */}
+        <Route exact path="/past-works" component={PastWorks} />
       </div>
     );
   }

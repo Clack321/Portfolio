@@ -20,7 +20,7 @@ function SideBar(props)  {
         Contact Me!
       </Link>
 
-      <Link className="menu-item" to="/contact-me">
+      <Link className="menu-item" to="/my-skills">
         My Skills
       </Link>
     </Menu>

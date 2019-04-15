@@ -1,0 +1,28 @@
+.footer-box {
+    height: 100px;
+    border: .1px gold solid;
+    background-color: #005e61;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: left;
+}
+.footer-box > ul {
+    list-style-type: none;
+}
+.footer-box > ul > li > a {
+    color: white;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.596)
+}
+.footer-box > ul > li {
+    justify-content: left;
+}
+
+.footer-box > ul {
+    justify-content: left;
+}
+.location {
+    text-align: center;
+}

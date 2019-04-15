@@ -38,13 +38,13 @@
   position: fixed;
   width: 36px;
   height: 30px;
-  left: 36px;
-  top: 36px;
+  right: 36px;
+  top: 10px;
 }
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: gold;
+  background: rgba(224, 221, 0, 0.822);
 }
 
 /* Position and sizing of clickable cross button */
