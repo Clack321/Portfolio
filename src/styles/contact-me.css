@@ -1,0 +1,150 @@
+.contact-me-outer-box {
+    background-color: rgba(255, 255, 255, 0.568);
+    border: 4px gold double;
+    border-radius: 12%;
+    margin: auto;
+    width: 850px;
+    height: 450px;
+    box-shadow: -7px 0px 7px rgba(71, 71, 71, 0.555), 7px -7px 7px rgba(71, 71, 71, 0.555), inset 8px -8px 10px 3px rgba(109, 78, 0, 0.377),inset -8px 8px 10px 3px rgba(109, 78, 0, 0.377);
+    margin-top: 15px;
+    margin-bottom: 115px;
+    text-align: center;
+    position: relative;
+  }
+
+  .contact-me-form {
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+.contact-me-name {
+    width: 600px;
+    height: 24px;
+    font-size: 24px;
+}
+
+.contact-me-email {
+    width: 600px;
+    height: 24px;
+    font-size: 24px;
+}
+
+.contact-me-message {
+    width: 600px;
+    height: 200px;
+    font-size: 24px;
+}
+
+.contact-me-submit-button {
+  background-color: #008085;
+  text-decoration: none;
+  text-decoration: bold;
+  text-align: center;
+  font-size: 24px;
+  border: 3px solid goldenrod;
+  box-shadow: -2px 2px 3px 3px rgba(0, 0, 0, 0.459);
+  border-radius: 20%;
+  color: #00fff2;
+  height: 120px;
+  width: 450px;
+  margin: auto;
+  transition: color 1.3s;
+}
+
+.contact-me-submit-button:hover {
+  color: gold;
+  background-color: red;
+}
+
+.contact-me-submit-button:active {
+  box-shadow: 0px 0px white;
+  color: gold;
+  background-color: red;
+}
+
+  @media only screen and (max-width: 1200px) {
+    .contact-me-outer-box {
+        border-radius: 10%;
+        width: 800px;
+    }
+
+    .contact-me-form   {
+        width: 750px;
+    }
+    
+  }
+@media only screen and (max-width: 900px) {
+    .contact-me-outer-box {
+        border-radius: 6%;
+        width: 530px;
+        height: 550px;
+        
+    }
+
+    .contact-me-form   {
+        width: 500px;
+        height: 540px;
+    }
+
+    .contact-me-name {
+        width: 500px;
+        height: 24px;
+        font-size: 24px;
+    }
+    
+    .contact-me-email {
+        width: 500px;
+        height: 24px;
+        font-size: 24px;
+    }
+    
+    .contact-me-message {
+        width: 500px;
+        height: 230px;
+        font-size: 24px;
+    }
+    
+  
+  }
+
+  @media only screen and (max-width: 600px) {
+    .contact-me-outer-box {
+        border-radius: 5%;
+        width: 300px;
+        height: 370px;
+        margin-bottom: 110px;
+    }
+
+    .contact-me-form  {
+        width: 280px;
+        height: 355px;
+        margin-bottom: 30px;
+    }
+
+    .contact-me-name {
+        width: 260px;
+        height: 18px;
+        font-size: 18px;
+    }
+    
+    .contact-me-email {
+        width: 260px;
+        height: 18px;
+        font-size: 18px;
+    }
+    
+    .contact-me-message {
+        width: 260px;
+        height: 150px;
+        font-size: 18px;
+    }
+
+    .contact-me-submit-button {
+        width: 260px;
+    }
+  
+  }
