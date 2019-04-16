@@ -7,7 +7,7 @@
   border-radius: 12%;
   margin: auto;
   width: 850px;
-  height: 650px;
+  height: 450px;
   box-shadow: -7px 0px 7px rgba(71, 71, 71, 0.555), 7px -7px 7px rgba(71, 71, 71, 0.555), inset 8px -8px 10px 3px rgba(109, 78, 0, 0.377),inset -8px 8px 10px 3px rgba(109, 78, 0, 0.377);
   margin-bottom: 10px;
   position: relative;
@@ -15,7 +15,7 @@
 
 #inner-box {
   width: 800px;
-  height: 600px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -71,13 +71,15 @@
 .past-works-output-box {
   border: 2px rgba(218, 165, 32, 0.171) double;
   width: 700px;
+  font-size: 24px;
+  text-shadow: 1px 1px 5px rgba(0, 27, 68, 0.74);
   margin: auto;
-  height: 300px;
+  height: 140px;
   background-color: rgba(218, 165, 32, 0.171);
 }
 
 .move-projects-left-button {
-  height: 304px;
+  height: 144px;
   width: 50px;
   color: #00fff2;
   border-radius: 100% 0px 0px 100%;
@@ -88,7 +90,7 @@
 
 .move-projects-right-button {
   color: #00fff2;
-  height: 304px;
+  height: 144px;
   width: 50px;
   border-radius: 0 100% 100% 0;
   border: 2px double goldenrod;
@@ -136,15 +138,15 @@
 
   .past-works-output-box {
     width: 650px;
+    font-size: 20px;
     margin: auto;
   }
   .button-container {
-    width: 700px;;
+    width: 700px;
     margin-right: auto;
   }
 
   .past-works-button {
-    /* Our sidebar item styling */
   font-size: 20px;
   height: 100px;
   width: 130px;
@@ -164,25 +166,43 @@
 
 @media only screen and (max-width: 600px) {
   .outer-box {
-    width: 400px;
+    width: 300px;
   }
 
-  .inner-box {
-    width: 375px;
+  #inner-box {
+    width: 275px;
   }
 
+  #inner-box > p {
+    text-align: center;
+    font-size: 24px;
+    margin:0;
+    text-shadow: .45px .45px gold;
+  }
   .output-box-container {
-    width: 350px;
+    width: 250px;
   }
 
   .past-works-output-box {
-    width: 350px;
+    width: 250px;
+    font-size: 12px;
+    margin: auto;
+  }
+  .past-works-output-box {
+    width: 250px;
     margin: auto;
   }
   .button-container {
-    width: 400px;
+    width: 300px;
     margin-right: auto;
   }
+  .past-works-button {
+    /* Our sidebar item styling */
+  font-size: 18px;
+  border-radius: 25%;
+  height: 60px;
+  width: 50px;
+}
 
   .past-works-button {
     /* Our sidebar item styling */
@@ -193,12 +213,12 @@
   }
 
   #inner-box > h1 {
-    font-size: 36px;
-    width: 45%;
+    font-size: 24px;
+    width: 275px;
   }
 
   #inner-box > p {
-    width: 45%;
-    font-size: 14x;
+    font-size: 12x;
+    width: 275px;
   }
 }

@@ -15,6 +15,7 @@ export function LandingPage(props) {
       <div id="page-wrap">
         <Header />
         <AboutMe />
+        <br/>
         <Footer />
       </div>
     </div>
