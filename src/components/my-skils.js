@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import SideBar from './sidebar'
+import Header from './header'
 import Footer from './footer'
 import '../styles/my-skills.css'
 
@@ -13,6 +14,7 @@ class MySkills extends Component {
     return (
       <div id="App">
         <SideBar outerContainerId={"App"} />
+        <Header />
         <ul className="languages">{this.programmingLanguages.map((language) => <li className="language"> {language} </li>)}</ul>
         <ul className="skills">{this.skills.map((skill) => <li className="skill"> {skill} </li>)}</ul>
         <Footer />

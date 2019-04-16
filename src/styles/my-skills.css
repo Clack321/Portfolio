@@ -19,7 +19,7 @@
   margin-top: 5px;
   margin-bottom: 5px;
   line-height: 110px;
-  background-color: #008085;
+  background-color: #340049;
   text-decoration: none;
   text-decoration: bold;
   text-align: center;
@@ -37,7 +37,7 @@
   margin-top: 5px;
   margin-bottom: 5px;
   line-height: 110px;
-  background-color: #008085;
+  background-color: #340049;
   text-decoration: none;
   text-decoration: bold;
   text-align: center;
@@ -45,7 +45,7 @@
   border: 3px solid goldenrod;
   box-shadow: -2px 2px 3px 3px rgba(0, 0, 0, 0.459);
   border-radius: 30%;
-  color: #00fff2;
+  color: #00fff2;;
   height: 150px;
   width: 160px;
   transition: color 1.3s;
@@ -56,6 +56,6 @@
   background-color: rgba(85, 0, 59, 0.356);
 }
 .skill:hover {
-  color: gold;
+  color: white;
   background-color: rgba(85, 0, 59, 0.356);
 }
