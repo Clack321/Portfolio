@@ -9,7 +9,8 @@
   width: 850px;
   height: 450px;
   box-shadow: -7px 0px 7px rgba(71, 71, 71, 0.555), 7px -7px 7px rgba(71, 71, 71, 0.555), inset 8px -8px 10px 3px rgba(109, 78, 0, 0.377),inset -8px 8px 10px 3px rgba(109, 78, 0, 0.377);
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 115px;
   position: relative;
 }
 
@@ -186,10 +187,6 @@
   .past-works-output-box {
     width: 250px;
     font-size: 12px;
-    margin: auto;
-  }
-  .past-works-output-box {
-    width: 250px;
     margin: auto;
   }
   .button-container {
