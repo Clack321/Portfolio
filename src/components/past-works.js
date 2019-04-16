@@ -10,13 +10,17 @@ import '../styles/past-works.css'
 class PastWorks extends Component {
   returnCorrectDisplay(display) {
     if (display === "coolFeatures") {
-      return this.props.pastWorks[this.props.projectIndex].coolFeatures
+      let returnString = "";
+      for(let i =0; i < this.props.pastWorks[this.props.projectIndex].coolFeatures.length; i++) {
+        returnString = (returnString + `\n ${this.props.pastWorks[this.props.projectIndex].coolFeatures[i]}`)
+      }
+      return returnString;
     } else if (display === "techStack") {
       let returnString = "";
         for(let i =0; i < this.props.pastWorks[this.props.projectIndex].techStack.length; i++) {
           returnString = (returnString + `${this.props.pastWorks[this.props.projectIndex].techStack[i]} `)
         }
-        return returnString
+        return returnString;
     } else if (display === "extraInfo") {
       return (
         ' ' + this.props.pastWorks[this.props.projectIndex].extraInfo + '\n Github Link: ' + this.props.pastWorks[this.props.projectIndex].gitHubLink + '\n Live App Link: ' + this.props.pastWorks[this.props.projectIndex].liveAppLink
