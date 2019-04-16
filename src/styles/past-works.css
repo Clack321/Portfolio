@@ -175,7 +175,7 @@
 
   #inner-box > p {
     text-align: center;
-    font-size: 24px;
+    font-size: 18px;
     margin:0;
     text-shadow: .45px .45px gold;
   }
@@ -198,19 +198,11 @@
   }
   .past-works-button {
     /* Our sidebar item styling */
-  font-size: 18px;
+  font-size: 14px;
   border-radius: 25%;
   height: 60px;
-  width: 50px;
+  width: 80px;
 }
-
-  .past-works-button {
-    /* Our sidebar item styling */
-  font-size: 18px;
-  height: 75px;
-  width: 100px;
-  
-  }
 
   #inner-box > h1 {
     font-size: 24px;

@@ -49,13 +49,14 @@ margin-bottom: 100px;
     .about-me {
         border-radius: 5%;
         width: 300px;
-        height: 920px;
+        height: 940px;
         margin-bottom: 110px;
     }
 
     .about-me-text-box  {
         width: 280px;
-        height: 680px;
+        height: 940px;
+        margin-bottom: 30px;
     }
   
   }
