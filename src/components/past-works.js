@@ -12,11 +12,16 @@ class PastWorks extends Component {
     if (display === "coolFeatures") {
       return this.props.pastWorks[this.props.projectIndex].coolFeatures
     } else if (display === "techStack") {
-      return this.props.pastWorks[this.props.projectIndex].techStack.map( (tech) => {
-        return (`${tech} `)
-      })
+      let returnString = "";
+        for(let i =0; i < this.props.pastWorks[this.props.projectIndex].techStack.length; i++) {
+          returnString = (returnString + `${this.props.pastWorks[this.props.projectIndex].techStack[i]} `)
+        }
+        return returnString
     } else if (display === "extraInfo") {
-      return this.props.pastWorks[this.props.projectIndex].extraInfo
+      return (
+        ' ' + this.props.pastWorks[this.props.projectIndex].extraInfo + '\n Github Link: ' + this.props.pastWorks[this.props.projectIndex].gitHubLink + '\n Live App Link: ' + this.props.pastWorks[this.props.projectIndex].liveAppLink
+      )
+
     }
   }
 
@@ -47,7 +52,7 @@ class PastWorks extends Component {
             </div>
             <div className="output-box-container">
               <button className="move-projects-left-button" onClick={() => this.moveMenuLeft()}>Prev</button>
-              <article className="past-works-output-box">{this.returnCorrectDisplay(this.props.display)}</article>
+              <textarea className="past-works-output-box" defaultValue={this.returnCorrectDisplay(this.props.display)} readOnly disabled></textarea>
               <button className="move-projects-right-button" onClick={() => this.moveMenuRight()}>Next</button>
             </div>
           </div>

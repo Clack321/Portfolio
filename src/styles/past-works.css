@@ -75,12 +75,13 @@
   font-size: 24px;
   text-shadow: 1px 1px 5px rgba(0, 27, 68, 0.74);
   margin: auto;
-  height: 140px;
+  height: 131.45px;
   background-color: rgba(218, 165, 32, 0.171);
+  resize: none;
 }
 
 .move-projects-left-button {
-  height: 144px;
+  height: 140px;
   width: 50px;
   color: #00fff2;
   border-radius: 100% 0px 0px 100%;
@@ -91,7 +92,7 @@
 
 .move-projects-right-button {
   color: #00fff2;
-  height: 144px;
+  height: 140px;
   width: 50px;
   border-radius: 0 100% 100% 0;
   border: 2px double goldenrod;
@@ -120,6 +121,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 25px;
+  height: 140px;
   width: 800px;
   position: relative;
   left: 25px;

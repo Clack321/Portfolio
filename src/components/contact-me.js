@@ -12,7 +12,7 @@ class ContactMe extends Component {
     emailjs.send("gmail", "template_zKgkE5Kd", 
     {"message_html":`${this.props.message}`,"from_name":`${this.props.name}`,"from_email": `${this.props.email}`}, 'user_4xYySLPqNLu9xbhvSiAzw')
     .then(() => {
-      
+      alert("Sent!")
       this.props.dispatch(clearContactForm())
     })
   }
