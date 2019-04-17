@@ -12,7 +12,7 @@ class PastWorks extends Component {
     if (display === "coolFeatures") {
       let returnString = "";
       for(let i =0; i < this.props.pastWorks[this.props.projectIndex].coolFeatures.length; i++) {
-        returnString = (returnString + `\n ${this.props.pastWorks[this.props.projectIndex].coolFeatures[i]}`)
+        returnString = i === 0 ? returnString + `${this.props.pastWorks[this.props.projectIndex].coolFeatures[i]}` : (returnString + `\n ${this.props.pastWorks[this.props.projectIndex].coolFeatures[i]}`)
       }
       return returnString;
     } else if (display === "techStack") {
@@ -56,7 +56,7 @@ class PastWorks extends Component {
             </div>
             <div className="output-box-container">
               <button className="move-projects-left-button" onClick={() => this.moveMenuLeft()}>Prev</button>
-              <textarea className="past-works-output-box" defaultValue={this.returnCorrectDisplay(this.props.display)} readOnly disabled></textarea>
+              <textarea className="past-works-output-box" value={this.returnCorrectDisplay(this.props.display)} readOnly disabled></textarea>
               <button className="move-projects-right-button" onClick={() => this.moveMenuRight()}>Next</button>
             </div>
           </div>
