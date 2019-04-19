@@ -13,3 +13,14 @@ export const updateDisplay = (display) => ({
   type: UPDATE_DISPLAY,
   display
 })
+
+export const TOGGLE_SLIDESHOW = 'TOGGLE_SLIDESHOW';
+export const toggleSlideShow = () => ({
+  type: TOGGLE_SLIDESHOW,
+})
+
+export const NEXT_PICTURE = 'NEXT_PICTURE';
+export const nextPicture = () => ({
+  type: NEXT_PICTURE
+})
+

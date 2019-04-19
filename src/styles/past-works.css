@@ -12,6 +12,16 @@
   margin-top: 15px;
   margin-bottom: 115px;
   position: relative;
+  transition: height ease-out .1s;  
+}
+
+.past-works-image {
+  border: 4px gold double;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-top: 15px;
 }
 
 #inner-box {
@@ -19,17 +29,18 @@
   height: 400px;
   display: flex;
   flex-direction: column;
+  margin: auto;
   justify-content: space-around;
 }
 
-#inner-box > h1 {
-  font-size: 64px;
+.past-works-title {
+  font-size: 48px;
   text-align: center;
   margin:0;
   text-shadow: .45px .45px gold;
 }
 
-#inner-box > p {
+.past-works-description {
   text-align: center;
   font-size: 24px;
   margin:0;
@@ -41,6 +52,7 @@
   display: flex;
   justify-content: space-evenly;
 }
+
 
 .past-works-button {
     /* Our sidebar item styling */
@@ -100,6 +112,19 @@
   transition: color .5s;
 }
 
+.toggle-slideshow-button {
+  color: #00fff2;
+  height: 50px;
+  width: 705px;
+  border-radius: 0 0 100% 100%;
+  border: 2px double goldenrod;
+  background-color: #008085;
+  position: absolute;
+  bottom: -50px;
+  left: 47.5px;
+  transition: color .5s;
+}
+
 .move-projects-right-button:hover {
   background-color: red;
   color: rgb(255, 225, 58);
@@ -120,34 +145,51 @@
 .output-box-container {
   display: flex;
   justify-content: space-between;
-  margin-top: 25px;
   height: 140px;
+  margin-left: auto;
+  margin-right: auto;
   width: 800px;
   position: relative;
-  left: 25px;
+}
+
+.extended {
+  height: 875px;
+  
+}
+
+#extended-inner {
+  height: 725px; 
+  width: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 @media only screen and (max-width: 900px) {
+  .toggle-slideshow-button {
+    width: 516px;
+    bottom: -50px;
+    left: 42.5px;
+    transition: color .5s;
+  }
+
   .outer-box {
     width: 700px;
   }
 
-  .inner-box {
-    width: 675px;
+  #inner-box {
+    width: 700px;
   }
 
   .output-box-container {
-    width: 650px;
+    width: 600px;
   }
 
   .past-works-output-box {
-    width: 650px;
+    width: 600px;
     font-size: 20px;
     margin: auto;
-  }
-  .button-container {
-    width: 700px;
-    margin-right: auto;
   }
 
   .past-works-button {
@@ -157,30 +199,70 @@
   
   }
 
-  #inner-box > h1 {
+ .past-works-title {
     font-size: 48px;
+    margin-left: auto;
+    margin-right: auto;
     width: 83%;
   }
 
-  #inner-box > p {
+  #extended-inner {
+    font-size: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 83%;
+  }
+
+  .past-works-description {
+    font-size: 22px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 83%;
+  }
+
+  .button-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #extended-inner {
     width: 83%;
     font-size: 18x;
+  }
+  
+  .past-works-image {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 @media only screen and (max-width: 600px) {
+
+  .toggle-slideshow-button {
+    width: 168px;
+  }
   .outer-box {
     width: 300px;
   }
 
   #inner-box {
+    margin-top: auto;
     width: 275px;
   }
+  #extended-inner {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 275px;
+    height: 500px;
+  }
 
-  #inner-box > p {
+  .past-works-description {
     text-align: center;
     font-size: 18px;
-    margin:0;
+    margin-left: auto;
+    margin-right: auto;
     text-shadow: .45px .45px gold;
   }
   .output-box-container {
@@ -193,24 +275,27 @@
     margin: auto;
   }
   .button-container {
-    width: 300px;
+    width: 275px;
     margin-right: auto;
   }
   .past-works-button {
-    /* Our sidebar item styling */
-  font-size: 14px;
-  border-radius: 25%;
-  height: 60px;
-  width: 80px;
-}
+    font-size: 14px;
+    border-radius: 25%;
+    height: 60px;
+    width: 80px;
+  }
 
-  #inner-box > h1 {
+  .past-works-title {
     font-size: 24px;
-    width: 275px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
   }
 
-  #inner-box > p {
-    font-size: 12x;
-    width: 275px;
+  .past-works-image {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
   }
+
 }
