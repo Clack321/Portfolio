@@ -3,7 +3,6 @@ import {connect} from 'react-redux';
 import SideBar from './sidebar'
 import Footer from './footer'
 import {moveMenuLeft, moveMenuRight, updateDisplay, toggleSlideShow, nextPicture} from '../actions/actions'
-import me from './me.jpg'
 import '../styles/past-works.css'
 
   function showExtendedDisplay(showSlideShow) {
@@ -70,7 +69,7 @@ class PastWorks extends Component {
               <button className="past-works-button" onClick={() => this.updateDisplay("techStack")}>Tech Stack</button>
               <button className="past-works-button" onClick={() => this.updateDisplay("extraInfo")}>Extra Info</button>
             </div>
-            {this.props.showSlideShow ? <img src={`images/${this.props.pastWorks[this.props.projectIndex].appPhotoLinks[this.props.pictureIndex]}`} className="past-works-image"></img> : ""}
+            {this.props.showSlideShow ? <img alt="A screenshot of a past project" src={`images/${this.props.pastWorks[this.props.projectIndex].appPhotoLinks[this.props.pictureIndex]}`} className="past-works-image"></img> : ""}
             <div className="output-box-container">
               <button className="move-projects-left-button" onClick={() => this.moveMenuLeft()}>Prev</button>
               <textarea className="past-works-output-box" value={this.returnCorrectDisplay(this.props.display)} readOnly disabled></textarea>
