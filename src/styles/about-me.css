@@ -1,19 +1,22 @@
 .about-me {
-background-color: rgba(255, 255, 255, 0.568);
+background-color: rgb(255, 255, 255);
 border: 4px gold double;
 border-radius: 12%;
 margin: auto;
 width: 800px;
-height: 375px;
+height: auto;
 box-shadow: -7px 0px 7px rgba(71, 71, 71, 0.555), 7px -7px 7px rgba(71, 71, 71, 0.555), inset 8px -8px 10px 3px rgba(109, 78, 0, 0.377),inset -8px 8px 10px 3px rgba(109, 78, 0, 0.377);
 margin-bottom: 100px;
 }
 
 
 .about-me-text-box  {
+    width: 750px;
     border-radius: 8%;
-    height: 325px;
+    height: auto;
     margin: auto;
+    text-align: left;
+    line-height: 1.9em;
 }
 .about-me-text-box > p {
     font-size: 21.5px;
@@ -34,13 +37,11 @@ margin-bottom: 100px;
     .about-me {
         border-radius: 6%;
         width: 530px;
-        height: 650px;
         
     }
 
     .about-me-text-box  {
         width: 500px;
-        height: 600px;
     }
   
   }

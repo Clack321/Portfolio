@@ -7,7 +7,7 @@ import {
 } from '../actions/actions'
 
 const initialState = {
-  showSlideShow: false,
+  showSlideShow: true,
   projectIndex: 0,
   pictureIndex: 0,
   projects: [

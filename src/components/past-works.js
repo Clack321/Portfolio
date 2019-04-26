@@ -74,7 +74,7 @@ class PastWorks extends Component {
               <button className="move-projects-left-button" onClick={() => this.moveMenuLeft()}>Prev</button>
               <textarea className="past-works-output-box" value={this.returnCorrectDisplay(this.props.display)} readOnly disabled></textarea>
               <button className="move-projects-right-button" onClick={() => this.moveMenuRight()}>Next</button>
-              <button className="toggle-slideshow-button" onClick={() => this.toggleSlideShow()}>{this.props.showSlideShow ? "Hide SlideShow" : "Show slideshow"}</button>
+              {/* <button className="toggle-slideshow-button" onClick={() => this.toggleSlideShow()}>{this.props.showSlideShow ? "Hide SlideShow" : "Show slideshow"}</button> */}
             </div>
           </div>
         </main>

@@ -1,5 +1,5 @@
 .footer-box {
-    height: 110px;
+    height: 115px;
     border: .1px gold solid;
     background-color: #005e61;
     position: fixed;
@@ -8,6 +8,7 @@
     width: 100%;
     color: white;
     text-align: left;
+    line-height: 1.3em;
 }
 .footer-box > ul {
     list-style-type: none;

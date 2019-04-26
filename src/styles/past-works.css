@@ -2,7 +2,7 @@
   width: 100vw;
 }
 .outer-box {
-  background-color: rgba(255, 255, 255, 0.568);
+  background-color: rgb(255, 255, 255);
   border: 4px gold double;
   border-radius: 12%;
   margin: auto;
@@ -88,8 +88,10 @@
   text-shadow: 1px 1px 5px rgba(0, 27, 68, 0.74);
   margin: auto;
   height: 131.45px;
+  color: black;
   background-color: rgba(218, 165, 32, 0.171);
   resize: none;
+  line-height: 1.6em;
 }
 
 .move-projects-left-button {
@@ -245,6 +247,7 @@
   }
   .outer-box {
     width: 300px;
+    height: 600px;
   }
 
   #inner-box {
@@ -271,7 +274,7 @@
 
   .past-works-output-box {
     width: 250px;
-    font-size: 10px;
+    font-size: 13px;
     margin: auto;
   }
   .button-container {
