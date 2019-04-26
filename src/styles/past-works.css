@@ -87,7 +87,7 @@
   font-size: 24px;
   text-shadow: 1px 1px 5px rgba(0, 27, 68, 0.74);
   margin: auto;
-  height: 131.45px;
+  height: 160px;
   color: black;
   background-color: rgba(218, 165, 32, 0.171);
   resize: none;
@@ -95,7 +95,7 @@
 }
 
 .move-projects-left-button {
-  height: 140px;
+  height: 168px;
   width: 50px;
   color: #00fff2;
   border-radius: 100% 0px 0px 100%;
@@ -106,7 +106,7 @@
 
 .move-projects-right-button {
   color: #00fff2;
-  height: 140px;
+  height: 168px;
   width: 50px;
   border-radius: 0 100% 100% 0;
   border: 2px double goldenrod;
