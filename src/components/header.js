@@ -10,8 +10,12 @@ class Header extends Component {
     return (
       <header className="header-bar-box">
       <img className="picture-of-me" src={me} alt="Me standing outside in the woods"></img>
-        <h1>David Johnson</h1>
-        <h2>A Full Stack Web Developer</h2>
+        <h1>
+          David Johnson
+        </h1>
+        <h2>
+          A Full Stack Web Developer
+        </h2>
       </header>
     );
   }

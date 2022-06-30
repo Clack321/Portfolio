@@ -10,7 +10,6 @@ export function LandingPage(props) {
   return (
     <div id="App">
       <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"} />
-
       <div id="page-wrap">
         <Header />
         <AboutMe />

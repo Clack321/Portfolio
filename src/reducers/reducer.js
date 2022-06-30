@@ -1,3 +1,4 @@
+/* eslint-disable no-lone-blocks */
 import {
   MOVE_MENU_RIGHT,
   MOVE_MENU_LEFT,
@@ -83,6 +84,7 @@ export function reducer(state = initialState, action) {
           });
         }
       }
+      break;
       case TOGGLE_SLIDESHOW: {
         return Object.assign({}, state, {
           showSlideShow : !state.showSlideShow,

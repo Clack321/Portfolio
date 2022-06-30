@@ -6,7 +6,6 @@ import '../styles/sidebar.css'
 
 function SideBar(props)  {
   return (
-    // Pass on our props
     <Menu {...props}>
       <Link className="menu-item" to="/">
         About Me
